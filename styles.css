@@ -1,0 +1,109 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+}
+
+.overlay h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.overlay button {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.overlay button:hover {
+    background-color: #ddd;
+}
+
+/* Content Section */
+.content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .overlay h2 {
+        font-size: 1.6rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+}
